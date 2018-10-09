@@ -1,4 +1,14 @@
 /* portfolio page */
+/*.masthead {
+  background:
+  width: 100vw;
+  height: 100vh;
+}*/
+.bg-light {
+  background-color: 0!important;
+}
+
+
 
 .work {
   position: relative;
@@ -10,16 +20,16 @@
 
 }
 
-.color{
+/*.color {
   color: white;
-  } 
+}*/
 
-.my-div{
-   border-color: white;
-    background-color: teal;
-    border: 1px solid white !IMPORTANT;
+.my-div {
+  border-color: white;
+  background-color: teal;
+  border: 1px solid black !IMPORTANT;
 
-   }
+}
 
 /* 
 .work:nth-child {
@@ -29,21 +39,21 @@
   width: 100%;
   height: 300px;
   border: 0 none;
-  opacity: 0.8;
+  opacity: 1 default;
 }
 
 .work h3 {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
-  padding: 15px;
+  padding: 16px;
   margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
+  font-weight: bold 50px;
+  line-height: 20px;
+  color: white;
   text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
+  /*background: ;*/
+  /* border-bottom: 0;*/
 }
 
 .auth-image {
@@ -88,17 +98,21 @@ textarea {
 input[type=submit] {
   padding: 10px 30px;
   font-size: 18px;
-  color: #fff;
+  color: white;
   cursor: pointer;
-  background: #4aaaa5;
+  background: rgb(8, 34, 34);
   border: 0 none;
 }
+
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:'Tinos', serif; ;
   font-size: 18px;
   line-height: 34px;
-  color: #777;
-  background: url("../images/concrete_seamless.png");
+  color: black;
+  background-image: url("./../image/blue-close-up-concrete.jpg");
+  width: 100vw;
+  height: 100vh;
+
 }
 
 * {
@@ -113,6 +127,7 @@ body {
 html,
 body {
   height: 100%;
+
 }
 
 .wrapper {
@@ -124,7 +139,6 @@ body {
 
 footer,
 .push {
-  height: 50px;
   margin-top: 50px;
 }
 
@@ -134,11 +148,11 @@ footer,
 
 #logo:hover,
 input[type=submit]:hover {
-  background: #5e7f7e;
+  background: teal;
 }
 
 nav a:hover {
-  color: #5e7f7e;
+  color: black;
 }
 
 .social:hover {
@@ -171,21 +185,27 @@ p:last-child {
 h1,
 h2,
 h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
+  font-family: 'Noto Sans', sans-serif;;
+  font-weight: bolder;
+  color:black;
+
 }
 
 h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #ddd;
+  border-bottom: 3px solid black;
+}
+
+.port-header {
+  border-top: 3px solid (241, 231, 231, 0.945);
 }
 
 h2,
 h3 {
-  font-size: 22px;
+  font-size: 18px;
+  color: black;
 }
 
 /* header */
@@ -203,13 +223,15 @@ h3 {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  background: teal;
 }
-#mynav{
+
+#mynav {
   width: 100%;
   background-color: teal;
   color: #fff;
 }
+
 nav {
   float: left;
 }
@@ -219,9 +241,13 @@ nav a {
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: #999;
+  color:gray;
   text-decoration: none;
   border-left: 1px solid #efefef;
+}
+
+.img {
+  background-position: center center;
 }
 
 nav a:first-child {
@@ -231,15 +257,24 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
+  padding: 3%;
   clear: both;
   font-size: 12px;
   color: #fff;
-  color: #ccc;
+  color: white;
   text-align: center;
-  background: #666;
+  background: black;
   border-top: 8px solid #4aaaa5;
+
+
 }
+
+
+
+.fa-heart {
+  color: red;
+}
+
 
 /* sidebar */
 
@@ -249,8 +284,8 @@ footer {
   max-width: 270px;
   padding: 30px;
   margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: black;
+  border: 1px solid black;
 }
 
 h3,
@@ -258,7 +293,7 @@ h3,
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
-  border-bottom: 2px solid #eee;
+
 }
 
 .social {
@@ -272,75 +307,94 @@ h3,
   margin-right: 0;
 }
 
-@media only screen and (max-width: 980px){
-   .container {
-     padding: 0 20px;
-     max-width: 768px;
-    }
-    #main-container {
-      padding-top: 130px
-    }
-    .main-section {
-      max-width: 420px;
-    }
-    .work {
-      width: 100px;
-    }
-    .auth-image {
-      width: 100%;
+@media only screen and (max-width: 980px) {
+  .container {
+    padding: 0 20px;
+    max-width: 768px;
+  }
+
+  #main-container {
+    padding-top: 130px
+  }
+
+  .main-section {
+    max-width: 420px;
+  }
+
+  .work {
+    width: 100px;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .main-section,
+  .sidebar {
+    max-width: 100%;
+  }
+
+  #main-container {
+    overflow: auto;
+  }
+
+  .sidebar {
+    margin-bottom: 40px;
+  }
+
+  .work {
+    width: 47%;
+    margin-bottom: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .auth-image {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 640px) {
+    #masthead {
+      position: static;
       margin-bottom: 20px;
     }
-  }  
-    @media only screen and (max-width: 768px) {
-      .main-section, .sidebar {
-        max-width: 100%;
-      }
-      #main-container {
-        overflow: auto; 
-      }
-      .sidebar {
-        margin-bottom: 40px;
-      }
-      .work {
-        width: 47%;
-        margin-bottom: 10px;
-      }
-      .work:nth-child(even) {
-        margin-right: 0;
-      }
-      .work:nth-child(odd) {
-        float: right;
-      }
-      .auth-image {
-        width: 50%;
-      }
-    @media only screen and (max-width: 640px) {
-      #masthead {
-        position: static;
-        margin-bottom: 20px;
-      }
-      header.container {
-        padding: 0;
-      }
-      #main-container {
-        padding-top: 0;
-      }
-      .work {
-        width: 100%;
-        margin: auto;
-      }
-      nav {
-        text-align: center;
-        width: 100%;
-        margin: 15px 0;
-      }
-      nav a {
-        width: 30%;
-        padding-left: 0;
-        margin-left: 0;
-      }
-    }  
-    
-    
-   
+
+    header.container {
+      padding: 0;
+    }
+
+    #main-container {
+      padding-top: 0;
+    }
+
+    .work {
+      width: 100%;
+      margin: auto;
+    }
+
+    nav {
+      text-align: center;
+      width: 100%;
+      margin: 15px 0;
+    }
+
+    nav a {
+      width: 30%;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+
+
+
 }
