@@ -1,14 +1,6 @@
-/* portfolio page */
-/*.masthead {
-  background:
-  width: 100vw;
-  height: 100vh;
-}*/
 .bg-light {
   background-color: 0!important;
 }
-
-
 
 .work {
   position: relative;
@@ -20,20 +12,12 @@
 
 }
 
-/*.color {
-  color: white;
-}*/
-
 .my-div {
   border-color: white;
   background-color: teal;
   border: 1px solid black !IMPORTANT;
 
 }
-
-/* 
-.work:nth-child {
-} */
 
 .work img {
   width: 100%;
@@ -52,8 +36,7 @@
   line-height: 20px;
   color: white;
   text-align: center;
-  /*background: ;*/
-  /* border-bottom: 0;*/
+  
 }
 
 .auth-image {
@@ -256,11 +239,9 @@ footer {
   padding: 3%;
   clear: both;
   font-size: 12px;
-  /*color: #fff;
-  color: white;*/
   text-align: center;
   background: linear-gradient(white,grey);
-  /*border-top: 8px solid #4aaaa5;*/
+  
 }
 
 .fa-heart {
