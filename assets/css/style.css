@@ -111,7 +111,7 @@ body {
   line-height: 34px;
   color: black;
   height: 100vh;
-  background: linear-gradient(to bottom, #ffccff 0%, #ffffff);
+  background-image:linear-gradient(white, lightblue,white);
 }
 
 * {
@@ -259,7 +259,7 @@ footer {
   /*color: #fff;
   color: white;*/
   text-align: center;
-  background: linear-gradient(to top, #ff3399 0%, #ccccff 100%);
+  background: linear-gradient(white,grey);
   /*border-top: 8px solid #4aaaa5;*/
 }
 
